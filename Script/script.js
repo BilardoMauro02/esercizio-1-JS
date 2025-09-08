@@ -73,8 +73,38 @@ function verificaEta(){
     else if(eta <=0){
         document.getElementById("verifica").append("età non valida")
     }
-
     else{
         document.getElementById("verifica").append("minorenne")
+    }
+}
+
+function contatore(){
+    for(let i = 0; i <=20; i++){
+        document.getElementById("contatore").append(i + ", ");
+    }
+}
+
+function soloPari(){
+    for(let i = 0; i <=20; i++){
+        if((i%2) == 0){
+            document.getElementById("contatore").append(i + ", ");
+        }
+        else{
+            null;
+        }
+    }
+}
+
+function rovescio(){
+    let i = 10
+    while (i>=1) {
+        document.getElementById("contatore").append(i + ", ");
+        i--;
+    }
+}
+
+function tabellina(){
+    for (let i = 1; i <= 10; i++) {
+        document.getElementById("contatore").append(5*i + ", ");
     }
 }
