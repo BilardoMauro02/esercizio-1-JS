@@ -9,6 +9,7 @@ function modificaValore(){
     pi = number;
 }
 
-function mostraTemperatura(){
-
+function stampaTemperatura(){
+    let temp = document.getElementById("temperatura").value;
+    document.getElementById("risultato").append(temp + " gradi");
 }
