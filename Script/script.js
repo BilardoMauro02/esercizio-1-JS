@@ -38,24 +38,28 @@ function calcola(){
     let operatore = document.getElementById("operator").value;
     switch(operatore){
         case "+" : 
-        let somma = numero1 + numero2;
-        document.getElementById("risultatoCalcolo").append(somma);
+            let somma = numero1 + numero2;
+            document.getElementById("risultatoCalcolo").append(somma);
         break;
 
         case "-" : 
-        let sottrazione = numero1 - numero2;
-        document.getElementById("risultatoCalcolo").append(sottrazione);
+            let sottrazione = numero1 - numero2;
+            document.getElementById("risultatoCalcolo").append(sottrazione);
         break;
 
         case "*" : 
-        let moltiplicazione = numero1 * numero2;
-        document.getElementById("risultatoCalcolo").append(moltiplicazione);
+            let moltiplicazione = numero1 * numero2;
+            document.getElementById("risultatoCalcolo").append(moltiplicazione);
         break;
 
         case "/" :
-        let divisione = numero1 / numero2;
-        document.getElementById("risultatoCalcolo").append(divisione);
+            let divisione = numero1 / numero2;
+            document.getElementById("risultatoCalcolo").append(divisione);
         break;
+
+        case "%" :
+            let resto = numero1 % numero2;
+            document.getElementById("risultatoCalcolo").append(resto);
 
     }
 
