@@ -64,3 +64,17 @@ function calcola(){
     }
 
 }
+
+function verificaEta(){
+    let eta = Number(document.getElementById("eta").value);
+    if(eta >= 18){
+        document.getElementById("verifica").append("maggiorenne")
+    }
+    else if(eta <=0){
+        document.getElementById("verifica").append("età non valida")
+    }
+
+    else{
+        document.getElementById("verifica").append("minorenne")
+    }
+}
