@@ -5,6 +5,10 @@ function cittaScelta(){
 
 const pi = 3.14;
 
-function modificaValore(number){
+function modificaValore(){
     pi = number;
+}
+
+function mostraTemperatura(){
+
 }
