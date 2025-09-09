@@ -33,35 +33,44 @@ function tipiDati(){
 }
 
 function calcola(){
-    let numero1 = Number(document.getElementById("numero1").value);
-    let numero2 = Number(document.getElementById("numero2").value);
+    let calcolo;
+
+    let numero1HTML = document.getElementById("numero1");
+    let numero1 = Number(numero1HTML.value);
+
+    let numero2HTML = document.getElementById("numero2");
+    let numero2 = Number(numero2HTML.value);
+
     let operatore = document.getElementById("operator").value;
+
+    let risultato = document.getElementById("risultatoCalcolo");
+    risultato.innerHTML = "";
+
+    numero1HTML.value = "";
+    numero2HTML.value = "";
+    
     switch(operatore){
         case "+" : 
-            let somma = numero1 + numero2;
-            document.getElementById("risultatoCalcolo").append(somma);
+            calcolo = numero1 + numero2;
         break;
 
         case "-" : 
-            let sottrazione = numero1 - numero2;
-            document.getElementById("risultatoCalcolo").append(sottrazione);
+            calcolo = numero1 - numero2;
         break;
 
         case "*" : 
-            let moltiplicazione = numero1 * numero2;
-            document.getElementById("risultatoCalcolo").append(moltiplicazione);
+            calcolo = numero1 * numero2;
         break;
 
         case "/" :
-            let divisione = numero1 / numero2;
-            document.getElementById("risultatoCalcolo").append(divisione);
+            calcolo = numero1 / numero2;
         break;
 
         case "%" :
-            let resto = numero1 % numero2;
-            document.getElementById("risultatoCalcolo").append(resto);
-
+            calcolo = numero1 % numero2;
+        break;
     }
+    risultato.innerHTML =  calcolo ;
 
 }
 
